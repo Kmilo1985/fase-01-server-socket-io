@@ -39,7 +39,7 @@ export default class Server {
   start(callback: any) {
     this.httpServer.listen(this.port, callback);
     this.io.on("connection", (cliente) => {
-      console.log("Nuevo cliente conectado");
+      // console.log("Nuevo cliente conectado");
 
       // MENSAJE
       socket.mensaje(cliente,this.io);
